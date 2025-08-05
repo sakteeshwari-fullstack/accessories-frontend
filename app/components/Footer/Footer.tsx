@@ -1,35 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 import {
   Mail,
   Phone,
-  MapPin,
-  Facebook,
-  Instagram,
-  Linkedin,
-  Youtube,
+  MapPin
 } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
-  const footerRef = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      footerRef.current,
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
-    );
-  }, []);
-
   return (
-    <footer
-      ref={footerRef}
-      className="bg-gradient-to-b from-orange-600 to-black/80 text-white py-12 px-6 md:px-16"
-    >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+    <footer className="bg-[#2b1609] dark text-white py-10 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        
         {/* Logo + About */}
         <div>
           <Image
@@ -39,84 +21,76 @@ export default function Footer() {
             height={60}
             className="mb-4"
           />
-          <p className="text-sm text-white/90 leading-relaxed">
-            Rittz Accessories is your trusted partner for premium leather belts,
-            wallets, and bags, crafted with unmatched quality and style.
+          <p className="text-sm text-gray-300 leading-relaxed max-w-xs">
+            Rittz Accessories is your trusted partner for premium leather belts, wallets, and bags,
+            crafted with unmatched quality and style.
             <br />
-            <span className="text-orange-500 font-semibold cursor-pointer hover:underline">
+            <span className="text-orange-500 font-medium cursor-pointer hover:underline">
               Read More...
             </span>
           </p>
         </div>
 
-        {/* Products */}
+        {/* Our Products */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Our Products</h3>
-          <ul className="space-y-2 text-white/90">
-            <li>Belts</li>
-            <li>Wallets</li>
+          <h3 className="text-lg font-semibold mb-4">Our Products</h3>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>Belt</li>
             <li>Bags</li>
-            <li>Corporate Gifting</li>
+            <li>Wallets</li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
-          <div className="space-y-2 text-white/90 text-sm">
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <div className="space-y-2 text-sm text-gray-300">
+            <p className="flex items-start gap-2">
+              <Phone className="w-4 h-4 mt-1 text-orange-500" />
+              <span>
+                +91-442247 7167 | +91-98410 49993<br />
+                +91-98410 97997
+              </span>
+            </p>
             <p className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-orange-500" />
-              +91-442247 1672 | +91-98410 49993
-            </p>
-            <p className="ml-6">+91-98410 97997</p>
-            <p className="flex items-center gap-2 mt-2">
               <Mail className="w-4 h-4 text-orange-500" />
-              <a href="mailto:sales@rittzaccessories.com">
-                sales@rittzaccessories.com
-              </a>
+              sales@rittzaccessories.com
             </p>
-          </div>
-          {/* Social Icons */}
-          <div className="flex gap-3 mt-4">
-            <a href="#" className="bg-[#3b5998] p-2 rounded hover:scale-105 transition">
-              <Facebook className="text-white w-5 h-5" />
-            </a>
-            <a href="#" className="bg-[#E1306C] p-2 rounded hover:scale-105 transition">
-              <Instagram className="text-white w-5 h-5" />
-            </a>
-            <a href="#" className="bg-[#0A66C2] p-2 rounded hover:scale-105 transition">
-              <Linkedin className="text-white w-5 h-5" />
-            </a>
-            <a href="#" className="bg-[#FF0000] p-2 rounded hover:scale-105 transition">
-              <Youtube className="text-white w-5 h-5" />
-            </a>
           </div>
         </div>
 
-        {/* Locations */}
+        {/* Our Locations */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4">Our Locations</h3>
-          <div className="space-y-3 text-white/90 text-sm">
-            <p className="flex gap-2">
-              <MapPin className="w-4 h-4 text-orange-500" />
+          <h3 className="text-lg font-semibold mb-4">Our Locations</h3>
+          <ul className="space-y-3 text-sm text-gray-300">
+            <li className="flex gap-2 items-start">
+              <MapPin className="w-4 h-4 text-orange-500 mt-1" />
               Chromepet, Chennai, Tamil Nadu, India
-            </p>
-            <p className="flex gap-2">
-              <MapPin className="w-4 h-4 text-orange-500" />
+            </li>
+            <li className="flex gap-2 items-start">
+              <MapPin className="w-4 h-4 text-orange-500 mt-1" />
               7653, 116th Ave SE, Newcastle 98056, United States
-            </p>
-            <p className="flex gap-2">
-              <MapPin className="w-4 h-4 text-orange-500" />
-              Unit 615-51, Lower Simcoe Street, Toronto ON M5J 3A2, Canada
-            </p>
-          </div>
+            </li>
+            <li className="flex gap-2 items-start">
+              <MapPin className="w-4 h-4 text-orange-500 mt-1" />
+              Unit 615–51, Lower Simcoe Street, Toronto ON M5J 3A2, Canada
+            </li>
+          </ul>
         </div>
       </div>
 
-      {/* Footer bottom */}
-      <div className="border-t border-white/20 mt-10 pt-6 text-sm text-center text-white/70">
+      {/* Policy Links */}
+      <div className="mt-10 text-center text-sm text-gray-400 space-x-4">
+        <a href="/terms-of-use" className="hover:text-orange-500">Terms of Use</a>
+        <a href="/privacy-policy" className="hover:text-orange-500">Privacy Policy</a>
+        <a href="/shipping-policy" className="hover:text-orange-500">Shipping Info</a>
+        <a href="/return-exchange" className="hover:text-orange-500">Return & Exchange</a>
+      </div>
+
+      {/* Copyright */}
+      <div className="text-center text-sm text-gray-400 mt-4">
         Copyright © 2025 Rittz Accessories | Powered by{" "}
-        <span className="text-orange-500 font-medium cursor-pointer hover:underline">
+        <span className="text-orange-500 font-medium hover:underline cursor-pointer">
           Rittz Digital
         </span>
       </div>
