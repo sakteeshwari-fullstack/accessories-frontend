@@ -1,6 +1,6 @@
 
-import Contactus from "../components/Contact/Contactus"
-import ContactForm from "../components/Contact/ContactForm"
+import Contactus from "../../components/Contact/Contactus"
+import ContactForm from "../../components/Contact/ContactForm"
 export default function Page() {
   return (
     <div>
