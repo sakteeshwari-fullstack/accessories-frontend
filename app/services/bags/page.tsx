@@ -1,9 +1,8 @@
 import React from "react";
-import ProductImage from "@/app/components/Products/ProductImage";
-import ProductSliderOne from "@/app/components/Products/ProductSliderOne";
-
-import FAQSection from "@/app/components/Products/ProductFaq";
-import ProductInfo from "@/app/components/Products/ProductInfo";
+import ProductImage from "../../../components/Products/ProductImage";
+import ProductSliderOne from "../../../components/Products/ProductSliderOne";
+import FAQSection from "../../../components/Products/ProductFaq";
+import ProductInfo from "../../../components/Products/ProductInfo";
 
 const page = () => {
   return (

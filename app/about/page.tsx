@@ -1,7 +1,7 @@
 
-import AboutHeroImg from "../components/AboutHeroImg/AboutHeroImg"
-import AboutVideo from "../components/AboutVideo/AboutVideo"
-import AboutContent from "../components/AboutContent/AboutContent"
+import AboutHeroImg from "../../components/AboutHeroImg/AboutHeroImg"
+import AboutVideo from "../../components/AboutVideo/AboutVideo"
+import AboutContent from "../../components/AboutContent/AboutContent"
 
 export default function Page() {
   return (

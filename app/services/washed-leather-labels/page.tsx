@@ -1,8 +1,8 @@
 import React from 'react'
-import ProductImage from "@/app/components/Products/ProductImage";
-import WashedLeatherLabelsCTA from '@/app/components/Products/WashedLeatherLabelsCTA';
-import WashedLeatherLabelsFeatures from '@/app/components/Products/WashedLeatherLabelsFeatures';
-import LeatherLabelIndustries from '@/app/components/Products/LeatherLabelIndustries';
+import ProductImage from "../../../components/Products/ProductImage";
+import WashedLeatherLabelsCTA from '../../../components/Products/WashedLeatherLabelsCTA';
+import WashedLeatherLabelsFeatures from '../../../components/Products/WashedLeatherLabelsFeatures';
+import LeatherLabelIndustries from '../../../components/Products/LeatherLabelIndustries';
 
 const page = () => {
   return (

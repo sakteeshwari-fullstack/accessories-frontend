@@ -1,5 +1,5 @@
 import React from "react";
-import ProductImage from "@/app/components/Products/ProductImage";
+import ProductImage from "../../../components/Products/ProductImage";
 
 const page = () => {
   return (
