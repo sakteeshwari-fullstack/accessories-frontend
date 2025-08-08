@@ -11,14 +11,17 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
+  console.log(user)
+
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
         const res = await api.get('/api/user/auth/current-user', {
           withCredentials: true,
         });
-        if (res.data && res.data.user) {
-          setUser(res.data.user);
+        const data = await res.data
+        if (data) {
+          setUser(data);
         } else {
           router.push('/login'); // Redirect if user is not found
         }
@@ -60,7 +63,7 @@ export default function DashboardPage() {
 
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
-          <DashboardPanel user={user} />
+          {/* <DashboardPanel user={user} /> */}
         </div>
       </main>
     </div>

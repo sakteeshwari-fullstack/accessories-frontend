@@ -32,7 +32,7 @@ export default function OTPForm({
       const response = await api.post(endpoints[type], {
         ...contactData,
         otp
-      });
+      },{withCredentials:true});
       
       if (response.data.message) {
         setSuccess('Verification successful!');

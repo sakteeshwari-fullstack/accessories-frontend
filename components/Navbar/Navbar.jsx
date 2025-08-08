@@ -154,10 +154,10 @@ export default function Navbar({ menuData }) {
           </button>
 
           {/* Icons Only: Wishlist, Cart, Login */}
-          {iconItems.map((item) => {
+          {iconItems.map((item,i) => {
             const Icon = iconMap[item.icon];
             return (
-              <Link key={item.label} href={item.href} title={item.label}>
+              <Link key={i} href={item.href} title={item.label}>
                 <Icon className="w-6 h-6 hover:text-black text-orange-600" />
               </Link>
             );
