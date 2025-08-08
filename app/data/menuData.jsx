@@ -45,7 +45,7 @@ export const menuData = [
   // 🔽 Added Icon-based Links
   {
   
-    href: "/login",
+    href:"/login",
     icon: "User",
   },
   {

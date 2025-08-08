@@ -71,7 +71,16 @@ const LeatherGrid: React.FC = () => {
               Style And Quality Unleashed
             </h2>
             <p className="mb-3">
-              Expressed the balance sheet of each personal device in the domain...
+             Experience the luxurious allure of our premium leather belts, crafted by the best premium leather manufacturers in India. Our belts, made by top leather manufacturing companies, epitomize impeccable craftsmanship and functionality, enhancing your everyday style.
+            </p>
+            <p className="mb-3">
+            Indulge in the superior quality offered by leading leather product manufacturers, renowned for their dedication to genuine leather products. Our collection reflects the expertise of the best premium leather manufacturers in India, ensuring each piece meets the highest standards.
+            </p>
+             <p className="mb-3">
+           As a leading name among premium leather manufacturers, we pride ourselves on creating custom leather goods that cater to your unique style. Trust the best in the industry to provide leather belts that combine luxury and practicality seamlessly.
+            </p>
+             <p className="mb-3">
+           Choose excellence with custom leather goods manufacturers and experience the unparalleled quality and sophistication that only the best leather companies can deliver. Let our products, crafted by top leather goods manufacturers, elevate your wardrobe with timeless elegance and unmatched durability.
             </p>
             {/* Additional paragraphs truncated for brevity */}
           </div>
@@ -80,6 +89,8 @@ const LeatherGrid: React.FC = () => {
               Belt
             </button>
           </div>
+          <hr className="my-6 w-1/4 mx-auto border-gray-600" />
+
         </div>
 
         {/* Right Images */}
@@ -114,7 +125,13 @@ const LeatherGrid: React.FC = () => {
               Stitched Toward Luxury
             </h1>
             <p className="mb-4">
-              Despite the progress of upgrading the new luxury...
+            Discover the epitome of organization and security with our premium leather wallets. Crafted with unmatched precision and attention to detail, our wallets perfectly blend style and functionality. As one of the best premium leather product manufacturers in India, we pride ourselves on being among the best leather companies in India.
+            </p>
+            <p className="mb-4">
+              Our collection showcases the expertise of premium leather manufacturers, ensuring every piece is made from the highest quality materials. Whether you seek genuine leather products or custom leather goods, our range caters to all your needs, backed by the craftsmanship of best leather product manufacturers in India.
+            </p>
+            <p className="mb-4">
+              We collaborate with the best leather companies in india to bring you products that excel in durability and elegance. As a prominent leather goods manufacturer, we are dedicated to producing items that not only meet but exceed your expectations. Trust the best leather product manufacturing companies in India for wallets that reflect luxury and sophistication.
             </p>
           </div>
           <div className="mt-6 flex justify-center">
@@ -122,6 +139,8 @@ const LeatherGrid: React.FC = () => {
               Wallet
             </button>
           </div>
+          <hr className="my-6 w-1/4 mx-auto border-gray-600" />
+
         </div>
 
         {/* Center Images */}
@@ -153,7 +172,14 @@ const LeatherGrid: React.FC = () => {
               Exclusive & Handcrafted
             </h2>
             <p className="mb-3">
-              Despite a stunning collection of windows throughout twelve long centuries...
+            Discover a stunning collection of exclusive handcrafted leather bags designed to suit every style and need. At Rittz Accessories, one of the best premier leather manufacturers in India, we take pride in offering genuine leather products crafted to perfection. Whether you need a spacious tote, a chic clutch, or a versatile crossbody, our collection has something for everyone.
+            </p>
+            <p className="mb-3">
+As a leading name in the leather manufacturing industry, Rittz Accessories exemplifies quality and craftsmanship. Our range of custom leather goods is meticulously created by the best artisans in India, ensuring luxury and elegance in every piece. Choose from our premium leather products and experience the superior craftsmanship that makes us one of the best leather product manufacturing companies in India.
+
+            </p>
+            <p className="mb-3">
+Elevate your style with Rittz Accessories, where tradition meets contemporary design, offering you the finest in leather craftsmanship.
             </p>
           </div>
           <div className="mt-6 flex justify-center">
@@ -161,6 +187,8 @@ const LeatherGrid: React.FC = () => {
               Bag
             </button>
           </div>
+        <hr className="my-6 w-1/4 mx-auto border-gray-600" />
+
         </div>
       </div>
     </div>
