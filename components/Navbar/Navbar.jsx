@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import ContactPopup from "../../components/Popup/Popup";
 import {
   ChevronDown,
   Download,
@@ -24,7 +25,11 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Navbar({ menuData }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null); // <-- Submenu control
+
+   const [showPopup, setShowPopup] = useState(false);
+
   const pathname = usePathname();
+
 
   const logoRef = useRef(null);
   const navLinksRef = useRef(null);
@@ -71,10 +76,10 @@ export default function Navbar({ menuData }) {
           <Image
             src="/rittz-access-logo.png"
             alt="Logo"
-            width={150}
-            height={50}
-            className="cursor-pointer"
+            width={150}   // or whatever size you need
+            height={50}   // preserve aspect ratio
           />
+
         </div>
 
         {/* Desktop Navigation Links */}
@@ -97,11 +102,10 @@ export default function Navbar({ menuData }) {
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className={`transition duration-200 ${
-                        isActive(item.href)
+                      className={`transition duration-200 ${isActive(item.href)
                           ? "text-orange-600 opacity-70 pointer-events-none"
                           : "hover:text-orange-600"
-                      }`}
+                        }`}
                     >
                       {item.label}
                     </Link>
@@ -119,11 +123,10 @@ export default function Navbar({ menuData }) {
                         <Link
                           key={sub.label}
                           href={sub.href}
-                          className={`flex items-center gap-5 px-3 py-3 rounded-lg transition-all hover:bg-orange-50 w-full ${
-                            isActive(sub.href)
+                          className={`flex items-center gap-5 px-3 py-3 rounded-lg transition-all hover:bg-orange-50 w-full ${isActive(sub.href)
                               ? "text-orange-600 opacity-70 pointer-events-none"
                               : "hover:text-orange-600"
-                          }`}
+                            }`}
                         >
                           {sub.image && (
                             <div className="w-28 h-28 rounded-md overflow-hidden border border-gray-200 shrink-0">
@@ -148,9 +151,10 @@ export default function Navbar({ menuData }) {
         </div>
 
         {/* Desktop Right Side Buttons */}
-        <div ref={buttonsRef} className="hidden lg:flex items-center gap-4 text-sm font-medium">
-          <button className="bg-black text-white px-4 py-2 rounded hover:bg-orange-600 transition-all flex items-center gap-2">
-            <Download className="w-4 h-4" /> Download Catalogue
+        <div ref={buttonsRef} className="hidden lg:flex items-center cursor-pointer gap-4 text-sm font-medium">
+          <button className="bg-black cursor-pointer text-white px-4 py-2 rounded hover:bg-orange-600 transition-all flex items-center gap-2"  
+          onClick={() => setShowPopup(true)}>
+            <Download className="w-4 h-4 " /> Download Catalogue
           </button>
 
           {/* Icons Only: Wishlist, Cart, Login */}
@@ -185,6 +189,9 @@ export default function Navbar({ menuData }) {
           iconItems={iconItems}
         />
       )}
+
+      {/* Contact Popup Form */}
+      <ContactPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
     </nav>
   );
 }
