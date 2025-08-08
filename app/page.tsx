@@ -9,7 +9,7 @@ import Quality from "../components/Quality/Quality"
 import ProductCarousel from "../components/ProductCarousel/ProductCarousel";
 import Sedex from "../components/Sedex/Sedex"
 import Leather from "../components/Leather/Leather"
-import { heroData } from "./data/heroContent";
+import { heroData } from "../data/heroContent";
 
 export default function HomePage() {
  

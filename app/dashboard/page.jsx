@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import api from '@/utils/api';
-import DashboardPanel from '@/components/DashboardPanel';
+
 import LogoutButton from '@/components/Auth/LogoutButton';
 import { useRouter } from 'next/navigation';
 

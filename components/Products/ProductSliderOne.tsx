@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eye, Link as LinkIcon } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { productsData } from "@/app/data/productData";
+import { productsData } from "@/data/productData";
 
 interface ProductSliderProps {
   category: "belt" | "wallet" | "bag";

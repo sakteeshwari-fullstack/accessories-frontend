@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Navbar/Navbar.jsx", "app/data/menuData.jsx", "app/components/Navbar/NavMobile.jsx", "app/layout.tsx", "app/components/Header/Header.jsx", "tailwind.config.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/Navbar/Navbar.jsx", "data/menuData.jsx", "app/components/Navbar/NavMobile.jsx", "app/layout.tsx", "app/components/Header/Header.jsx", "tailwind.config.ts"],
   "exclude": ["node_modules"]
 }

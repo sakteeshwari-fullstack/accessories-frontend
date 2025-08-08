@@ -1,23 +1,12 @@
 'use client';
 import { useEffect, useState } from 'react';
 // import axios from 'axios';
-import api from '../../../utils/api';
+
 
 export default function ProductsPage() {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await api.get('api/products');
-        setProducts(res.data);
-      } catch (err) {
-        console.error('Error fetching products:', err);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+ 
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
